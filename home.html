@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DANIEL BRAN - Portafolio</title>
+    <title>José Daniel Bran - Portafolio</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
@@ -13,9 +13,9 @@
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#">JOSE DANIEL BRAN</a>
+            <a class="navbar-brand" href="#">JOSÉ DANIEL BRAN</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -28,13 +28,10 @@
                         <a class="nav-link" href="#about">Sobre mí</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#services">Servicios</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="#skills">Habilidades</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#projects">Proyectos</a>
+                        <a class="nav-link" href="#experience">Experiencia</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">Contacto</a>
@@ -45,24 +42,245 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero py-5" id="home">
+    <section class="hero" id="home">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-6">
+                <div class="col-lg-6 order-lg-1 order-2">
                     <div class="hero-content">
                         <h4>Hola, soy</h4>
-                        <h1>JOSE DANIEL BRAN BENITO</h1>
-                        <h2>Y soy <span class="text-primary">Desarrollador Web  Jr</span></h2>
+                        <h1>JOSÉ DANIEL BRAN BENITO</h1>
+                        <h2>Y soy <span class="text-primary">Desarrollador Web Jr</span></h2>
                         <p>Soy un diseñador y desarrollador web con experiencia en creación de sitios web modernos, diseño frontend y mucho más...</p>
-                        <a href="#about" class="btn btn-primary">Más sobre mí</a>
+                        <div class="hero-buttons">
+                            <a href="#about" class="btn btn-primary me-2">Más sobre mí</a>
+                            <a href="#contact" class="btn btn-outline-light">Contáctame</a>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <img src="recursos/img/foto-perfil.png" alt="Tu nombre" class="img-fluid rounded-circle shadow profile-img">
+                <div class="col-lg-6 order-lg-2 order-1 text-center mb-4 mb-lg-0">
+                    <img src="recursos/img/foto-perfil.png" alt="José Daniel Bran" class="img-fluid rounded-circle shadow-lg profile-img">
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Sección Sobre Mí -->
+    <section id="about" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title">Sobre <span>Mí</span></h2>
+            <div class="row">
+                <div class="col-lg-6">
+                    <h3 class="mb-4">Mi trayectoria</h3>
+                    <p>Soy un apasionado desarrollador web con formación en sistemas y experiencia en desarrollo frontend. Me especializo en crear experiencias digitales atractivas y funcionales.</p>
+                    <div class="d-flex align-items-center mb-3">
+                        <i class="fas fa-graduation-cap me-3 text-primary"></i>
+                        <div>
+                            <h5 class="mb-0">Educación</h5>
+                            <p class="mb-0">Ingeniería en Sistemas (En curso)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="skills-progress mt-4 mt-lg-0">
+                        <h3 class="mb-4">Mis intereses</h3>
+                        <p>Me apasiona el desarrollo web, la seguridad informática y la enseñanza de tecnología. Siempre estoy aprendiendo nuevas tecnologías para mejorar mis habilidades.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Habilidades -->
+    <section id="skills" class="py-5">
+        <div class="container">
+            <h2 class="section-title">Habilidades <span>Técnicas</span></h2>
+            <div class="row">
+                <!-- Columna 1 -->
+                <div class="col-md-6">
+                    <div class="skill-item mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h5>HTML</h5>
+                            <span>85%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-danger" role="progressbar" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h5>CSS</h5>
+                            <span>80%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h5>JavaScript</h5>
+                            <span>75%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-primary" role="progressbar" style="width: 75%"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Columna 2 -->
+                <div class="col-md-6">
+                    <div class="skill-item mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h5>C#</h5>
+                            <span>70%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-info" role="progressbar" style="width: 70%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h5>MySQL</h5>
+                            <span>65%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-warning" role="progressbar" style="width: 65%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h5>Bootstrap</h5>
+                            <span>80%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-warning" role="progressbar" style="width: 80%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Experiencia -->
+    <section id="experience" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title">Experiencia <span>Laboral</span></h2>
+            
+            <div class="timeline">
+                <!-- Experiencia 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <h3>Desarrollador Web</h3>
+                        <h4>Freelancer</h4>
+                        <p class="text-muted">Junio 2025 - Presente</p>
+                    </div>
+                    <div class="timeline-content">
+                        <ul>
+                            <li>Desarrollar aplicaciones web y para clientes diversos</li>
+                            <li>Implementar soluciones de software personalizadas</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Experiencia 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <h3>Desarrollador Web</h3>
+                        <h4>Puntos de Venta</h4>
+                        <p class="text-muted">Marzo 2025 - Presente</p>
+                    </div>
+                    <div class="timeline-content">
+                        <ul>
+                            <li>Implementar sistemas de gestión de ventas y clientes</li>
+                            <li>Optimizar procesos de ventas mediante herramientas digitales</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Experiencia 3 -->
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <h3>Soporte Técnico</h3>
+                        <h4>Colegio Juda</h4>
+                        <p class="text-muted">Febrero 2023 - Noviembre 2024</p>
+                    </div>
+                    <div class="timeline-content">
+                        <ul>
+                            <li>Rediseño y mantenimiento del equipo de cómputo</li>
+                            <li>Implementación de sistemas de gestión educativa</li>
+                            <li>Desarrollo de herramientas para comunicación interna</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Experiencia 4 -->
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <h3>Maestro de Informática</h3>
+                        <h4>Colegio Juda</h4>
+                        <p class="text-muted">Enero 2023 - Noviembre 2024</p>
+                    </div>
+                    <div class="timeline-content">
+                        <ul>
+                            <li>Enseñanza de herramientas digitales a estudiantes</li>
+                            <li>Desarrollo de planes de estudio en informática</li>
+                            <li>Implementación de proyectos tecnológicos en el aula</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="section-title">Contáct<span>ame</span></h2>
+            <div class="row">
+                <div class="col-lg-6">
+                    <form id="contact-form">
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Nombre" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="5" placeholder="Mensaje" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                    </form>
+                </div>
+                <div class="col-lg-6 mt-4 mt-lg-0">
+                    <div class="contact-info">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fas fa-envelope me-3 text-primary"></i>
+                            <p class="mb-0">josedanielbran93@gmail.com</p>
+                        </div>
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fas fa-phone me-3 text-primary"></i>
+                            <p class="mb-0">+502 5614 5110</p>
+                        </div>
+                        <div class="social-links mt-4">
+                            <a href="#" class="me-3"><i class="fab fa-github"></i></a>
+                            <a href="#" class="me-3"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="me-3"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 bg-dark text-white">
+        <div class="container text-center">
+            <p class="mb-0">© 2025 José Daniel Bran. Todos los derechos reservados.</p>
+        </div>
+    </footer>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

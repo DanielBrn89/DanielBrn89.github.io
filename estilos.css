@@ -1,41 +1,4 @@
-/* Estilos generales */
-body {
-  font-family: 'Arial', sans-serif;
-  line-height: 1.6;
-}
 
-/* Animación para requisito de JS */
-.fade-in {
-  opacity: 0;
-  transition: opacity 1s ease-in;
-}
-
-.fade-in.active {
-  opacity: 1;
-}
-
-/* Barra de habilidades (para animación con JS) */
-.skill-bar {
-  height: 20px;
-  background-color: #007bff;
-  width: 0;  /* Se animará con JS */
-  transition: width 2s;
-}
-/* Variables de color */
-:root {
-    --primary-color: #007bff;
-    --secondary-color: #6c757d;
-    --dark-color: #343a40;
-    --light-color: #f8f9fa;
-}
-
-/* Estilos generales */
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
-    color: var(--dark-color);
-    padding-top: 56px; /* Para compensar el navbar fijo */
-}
 
 /* Hero Section */
 .hero {
@@ -133,5 +96,177 @@ body {
     .profile-img {
         max-width: 300px;
         margin-top: 2rem;
+    }
+}
+/* Estilos generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 56px;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #343a40;
+    text-align: center;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: #007bff;
+    margin: 15px auto;
+}
+
+/* Sección Sobre Mí */
+#about {
+    background: #f8f9fa;
+    padding: 80px 0;
+}
+
+#about h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: #007bff;
+}
+
+.experience {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.experience ul {
+    list-style: none;
+    padding: 0;
+}
+
+.experience li {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.experience li:last-child {
+    border-bottom: none;
+}
+
+.experience strong {
+    color: #007bff;
+}
+/* Sección Habilidades */
+#skills {
+    background-color: #fff;
+}
+
+.skill-item {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.progress {
+    height: 10px;
+    border-radius: 5px;
+    background: #e9ecef;
+}
+
+.progress-bar {
+    border-radius: 5px;
+}
+
+/* Sección Experiencia */
+#experience {
+    position: relative;
+}
+
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background-color: #007bff;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -1px;
+}
+
+.timeline-item {
+    padding: 10px 40px;
+    position: relative;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.timeline-item:nth-child(odd) {
+    left: 0;
+}
+
+.timeline-item:nth-child(even) {
+    left: 50%;
+}
+
+.timeline-header {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 6px;
+    position: relative;
+}
+
+.timeline-item:nth-child(odd) .timeline-header {
+    text-align: right;
+}
+
+.timeline-item:nth-child(even) .timeline-header {
+    text-align: left;
+}
+
+.timeline-content {
+    padding: 20px;
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+}
+
+.timeline-content ul {
+    padding-left: 20px;
+}
+
+.timeline-content li {
+    margin-bottom: 8px;
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+    .timeline::before {
+        left: 31px;
+    }
+    
+    .timeline-item {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+    
+    .timeline-item:nth-child(even) {
+        left: 0;
+    }
+    
+    .timeline-item:nth-child(odd) .timeline-header,
+    .timeline-item:nth-child(even) .timeline-header {
+        text-align: left;
     }
 }

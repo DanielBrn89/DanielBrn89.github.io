@@ -65,6 +65,31 @@ function animateSections() {
         }
     });
 }
+// Animar barras de habilidades al hacer scroll
+function animateSkills() {
+    const skillsSection = document.getElementById('skills');
+    const skillBars = document.querySelectorAll('.progress-bar');
+    
+    if (isElementInViewport(skillsSection)) {
+        skillBars.forEach(bar => {
+            const width = bar.style.width;
+            bar.style.width = '0';
+            setTimeout(() => {
+                bar.style.width = width;
+            }, 200);
+        });
+    }
+}
+
+function isElementInViewport(el) {
+    const rect = el.getBoundingClientRect();
+    return (
+        rect.top <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.bottom >= 0
+    );
+}
+
+window.addEventListener('scroll', animateSkills);
 
 // Inicializar animaciones
 window.addEventListener('load', animateSections);
