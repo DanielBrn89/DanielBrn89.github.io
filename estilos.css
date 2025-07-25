@@ -1,0 +1,23 @@
+/* Estilos generales */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+}
+
+/* Animación para requisito de JS */
+.fade-in {
+  opacity: 0;
+  transition: opacity 1s ease-in;
+}
+
+.fade-in.active {
+  opacity: 1;
+}
+
+/* Barra de habilidades (para animación con JS) */
+.skill-bar {
+  height: 20px;
+  background-color: #007bff;
+  width: 0;  /* Se animará con JS */
+  transition: width 2s;
+}
