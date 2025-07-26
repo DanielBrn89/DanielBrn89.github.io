@@ -94,3 +94,24 @@ window.addEventListener('scroll', animateSkills);
 // Inicializar animaciones
 window.addEventListener('load', animateSections);
 window.addEventListener('scroll', animateSections);
+
+// Elimina cualquier animación que pueda estar ocultando las barras
+document.addEventListener('DOMContentLoaded', function() {
+    const progressBars = document.querySelectorAll('.progress-bar');
+    
+    progressBars.forEach(bar => {
+        // Fuerza el ancho completo inmediatamente
+        const width = bar.getAttribute('aria-valuenow') + '%';
+        bar.style.width = width;
+        
+        // Opcional: Añade animación al cargar la página
+        bar.style.transition = 'none';
+        setTimeout(() => {
+            bar.style.width = '0';
+            setTimeout(() => {
+                bar.style.transition = 'width 1.5s ease';
+                bar.style.width = width;
+            }, 50);
+        }, 100);
+    });
+});
