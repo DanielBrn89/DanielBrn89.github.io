@@ -12,57 +12,84 @@
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">JOSÉ DANIEL BRAN</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#home">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">Sobre mí</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#skills">Habilidades</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#experience">Experiencia</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contacto</a>
-                    </li>
-                </ul>
-            </div>
+    <!-- Navbar Corregido -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">JOSÉ DANIEL BRAN</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link btn btn-outline-light mx-1 btn-sm" href="#home">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn btn-outline-light mx-1 btn-sm" href="#about">Sobre mí</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn btn-outline-light mx-1 btn-sm" href="#skills">Habilidades</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn btn-outline-light mx-1 btn-sm" href="#experience">Experiencia</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn btn-primary mx-1 btn-sm" href="#contact">Contacto</a>
+                </li>
+                <!-- Nuevo botón para descargar CV -->
+                <li class="nav-item ms-lg-2">
+                    <a href="recursos/docs/cv-jose-daniel-bran.pdf" 
+                       class="btn btn-success btn-sm"
+                       download="CV-Jose-Daniel-Bran.pdf">
+                       <i class="fas fa-download me-1"></i> Descargar CV
+                    </a>
+                </li>
+            </ul>
         </div>
-    </nav>
+    </div>
+</nav>
+   
+</nav>
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 order-lg-1 order-2">
-                    <div class="hero-content">
-                        <h4>Hola, soy</h4>
-                        <h1>JOSÉ DANIEL BRAN BENITO</h1>
-                        <h2>Y soy <span class="text-primary">Desarrollador Web Jr</span></h2>
-                        <p>Soy un diseñador y desarrollador web con experiencia en creación de sitios web modernos, diseño frontend y mucho más...</p>
-                        <div class="hero-buttons">
-                            <a href="#about" class="btn btn-primary me-2">Más sobre mí</a>
-                            <a href="#contact" class="btn btn-outline-light">Contáctame</a>
-                        </div>
+   <!-- Hero Section - Versión con redes sociales -->
+<section class="hero" id="home">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 order-lg-1 order-2">
+                <div class="hero-content">
+                    <h4>Hola, soy</h4>
+                    <h1>JOSÉ DANIEL BRAN BENITO</h1>
+                    <h2>Y soy <span class="text-primary">Desarrollador Web Jr</span></h2>
+                    <p>Soy un diseñador y desarrollador web con experiencia en creación de sitios web modernos, diseño frontend y mucho más...</p>
+                    
+                    <!-- Redes Sociales -->
+                    <div class="social-links mt-4">
+                        <a href="https://www.facebook.com/share/19iXyGpMA1/" target="_blank" class="social-icon">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="http://www.linkedin.com/in/jose-daniel-bran-79599135b" target="_blank" class="social-icon">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/DanielBrn89" target="_blank" class="social-icon">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://wa.me/50256145110" target="_blank" class="social-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                    
+                    <div class="hero-buttons mt-4">
+                        <a href="#about" class="btn btn-primary me-2">Más sobre mí</a>
+                        <a href="#contact" class="btn btn-outline-light">Contáctame</a>
                     </div>
                 </div>
-                <div class="col-lg-6 order-lg-2 order-1 text-center mb-4 mb-lg-0">
-                    <img src="recursos/img/foto-perfil.png" alt="José Daniel Bran" class="img-fluid rounded-circle shadow-lg profile-img">
-                </div>
+            </div>
+            <div class="col-lg-6 order-lg-2 order-1 text-center mb-4 mb-lg-0">
+                <img src="recursos/img/foto-perfil.png" alt="José Daniel Bran" class="img-fluid rounded-circle shadow-lg profile-img">
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- Sección Sobre Mí -->
     <section id="about" class="py-5 bg-light">
